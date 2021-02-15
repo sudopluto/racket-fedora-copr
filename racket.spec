@@ -67,9 +67,6 @@ already available.
 
 %autosetup -v -p1
 
-# Remove bundled libffi
-rm -r src/foreign/libffi
-
 %build
 cd src
 
@@ -253,6 +250,7 @@ A local installation of the Racket documentation system.
 * Mon Feb 15 2021 Pranav Sharma <pranav.sharma.ama@gmail.com> - 7.9-1
 - Update to 7.9
 - Remove remove-nonfree doc patch
+- FFI no longer bundled, no need to remove
 
 * Wed Jan 27 2021 Fedora Release Engineering <releng@fedoraproject.org> - 7.4-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
